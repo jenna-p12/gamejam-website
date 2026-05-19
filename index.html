@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GAME JAM 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,38 +13,47 @@
   <!-- ── Nav ─────────────────────────────────────────── -->
   <nav>
     <div class="nav-inner">
-      <div class="nav-logo">GAMEJAM</div>
+      <div class="nav-logo">GAME<span>JAM</span></div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#theme">Theme</a></li>
-        <li><a href = "#storyboard">Storyboard</a></li>
-        <li><a href = "#purpose">Purpose</a></li>
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#storyboard">Storyboard</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- ── Hero ─────────────────────────────────────────── -->
   <section id="hero">
-    <div class="grid-bg"></div>
-    <p class="hero-eyebrow">Wed Day Game Jam · 2026</p>
-    <h1 class="hero-title">GAME<br><span>JAM</span><br>2026</h1>
-    <p class="hero-subtitle">All about our game created by Juniors Jenna Patel & Joshua Sanchez, Sophomores Anvay Purnaye & Elizabeth Elden, and Freshmen Hibba Muhammad & Charmi Patel</p>
-    <div class="hero-cta">
-      <a href="#storyboard" class="btn btn-primary">Storyboard</a>
-      <a href="#about" class="btn btn-outline">Learn More</a>
+    <div class="hero-bg-text" aria-hidden="true">GAME JAM</div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Wed Day Game Jam · 2026</p>
+      <h1 class="hero-title">GAME<br><em>JAM</em><br><span>2026</span></h1>
+      <p class="hero-subtitle">A 2D cooperative combat game built by Juniors Jenna Patel &amp; Joshua Sanchez, Sophomores Anvay Purnaye &amp; Elizabeth Elden, and Freshmen Hibba Muhammad &amp; Charmi Patel.</p>
+      <div class="hero-cta">
+        <a href="#storyboard" class="btn btn-primary">View Storyboard</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
     </div>
+    <div class="scroll-hint"><span></span>Scroll</div>
   </section>
 
   <!-- ── About ─────────────────────────────────────────── -->
   <section id="about">
     <div class="container">
       <div class="about-grid">
-        <div>
+        <div class="about-text">
           <p class="section-label">About</p>
-          <h2 class="section-title">About our Game</h2>
+          <h2 class="section-title">About Our Game</h2>
           <div class="section-divider"></div>
-          <p style="color:var(--muted);margin-bottom:1rem;">We created a 2D collaborative battle game where 2 players work together to fight enemies with special attacks like slashing and dashing. Each player has their own skill and contributes uniquely. </p>
+          <p>We created a 2D combat game where players can work together to fight against enemy ghost pirates while on a boat. Both players are crucial in that they both have their own unique abilities. Player 1 must defeat all of the ghosts since they have fighting abilities, and player 2 has a shield and can block attacks from ghosts. </p>
         </div>
+        <div class="about-image-wrap">
+          <img src="game-screenshot.png" alt="Screenshot of the game" class="about-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="about-img-placeholder">
+            <span class="placeholder-icon">🎮</span>
+            <span class="placeholder-text">game-screenshot.png</span>
+          </div>
         </div>
       </div>
     </div>
@@ -53,101 +62,68 @@
   <!-- ── Theme ──────────────────────────────────────────── -->
   <section id="theme">
     <div class="container">
-      <h2 class="section-title" style="text-align:center;">This Year's Theme</h2>
-      <div class="theme-box">
-        <div class="theme-word">BETTER TOGETHER</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Schedule ───────────────────────────────────────── -->
-  <section id="storyboard">
-    <div class="container">
-      <h2 class="section-title">Storyboard</h2>
-      <div class="section-divider"></div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="tl-date">Jul 1, 2026</div>
-          <div>
-            <div class="tl-event">Registrations Open</div>
-            <div class="tl-desc">Sign up solo or with your team.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-date">Jul 14, 2026</div>
-          <div>
-            <div class="tl-event">Registration Closes</div>
-            <div class="tl-desc">Last chance to join — no late entries.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-date">Jul 18 · 18:00 UTC</div>
-          <div>
-            <div class="tl-event">🚀 Jam Starts — Theme Revealed</div>
-            <div class="tl-desc">The clock starts. Build your game!</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-date">Jul 20 · 18:00 UTC</div>
-          <div>
-            <div class="tl-event">⏱ Submissions Close</div>
-            <div class="tl-desc">Upload your game before the deadline.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-date">Jul 20–27</div>
-          <div>
-            <div class="tl-event">Community Voting</div>
-            <div class="tl-desc">Rate and play games from other participants.</div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-date">Jul 28, 2026</div>
-          <div>
-            <div class="tl-event">🏆 Winners Announced</div>
-            <div class="tl-desc">Results published on this page and via email.</div>
-          </div>
+      <div class="theme-inner">
+        <p class="section-label">This Year's Theme</p>
+        <h2 class="section-title">The Theme</h2>
+        <div class="theme-card">
+          <div class="theme-deco" aria-hidden="true">✦</div>
+          <div class="theme-word">BETTER<br>TOGETHER</div>
+          <p class="theme-hint">This year's official Game Jam theme</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Prizes ─────────────────────────────────────────── -->
+  <!-- ── Purpose ────────────────────────────────────── -->
   <section id="purpose">
     <div class="container">
-      <p class="section-label">Rewards</p>
-      <h2 class="section-title">Prize Pool</h2>
-      <div class="prizes-grid">
-        <div class="prize-card">
-          <div class="prize-place">🥈</div>
-          <div class="prize-amount" style="color:var(--muted)">$1,000</div>
-          <div class="prize-desc">2nd Place<br>+ Feature on the site</div>
+      <p class="section-label">Why We Built It</p>
+      <h2 class="section-title">Purpose</h2>
+      <div class="section-divider"></div>
+      <div class="purpose-grid">
+        <div class="purpose-card">
+          <div class="purpose-icon">🤝</div>
+          <h3>Teamwork</h3>
+          <p>Our game is built around the idea that no one wins alone. Player 1 and Player 2 each hold abilities the other lacks — together they're unstoppable, apart they fall.</p>
         </div>
-        <div class="prize-card featured">
-          <div class="prize-place">🥇</div>
-          <div class="prize-amount" style="color:var(--accent3);">$3,000</div>
-          <div class="prize-desc">1st Place<br>+ Feature interview + press kit</div>
+        <div class="purpose-card">
+          <div class="purpose-icon">🎮</div>
+          <h3>Collaboration in Design</h3>
+          <p>Six students across three grade levels worked together to design, build, and ship this game — itself a living example of the "Better Together" theme.</p>
         </div>
-        <div class="prize-card">
-          <div class="prize-place">🥉</div>
-          <div class="prize-amount" style="color:var(--muted)">$500</div>
-          <div class="prize-desc">3rd Place<br>+ Honorable mention</div>
+        <div class="purpose-card">
+          <div class="purpose-icon">⚔️</div>
+          <h3>Meaningful Mechanics</h3>
+          <p>Every mechanic serves the theme. The shield and the sword are useless without each other — a design choice that reflects the spirit of cooperative play.</p>
         </div>
       </div>
-      <p style="color:var(--muted);margin-top:2rem;font-size:.8rem;">Additional categories: Best Art, Best Audio, Most Creative. Winners in each receive a $166 cash prize.</p>
     </div>
   </section>
-  
 
-  <!-- ── Footer ─────────────────────────────────────────── -->
+  <!-- ── Storyboard ────────────────────────────────────── -->
+  <section id="storyboard">
+    <div class="container">
+      <p class="section-label">Visual</p>
+      <h2 class="section-title">Storyboard</h2>
+      <div class="section-divider"></div>
+      <div class="storyboard-wrap">
+        <img src="storyboard.png" alt="Game storyboard showing the concept and flow of the game">
+      </div>
+    </div>
+  </section>
+
   <!-- ── Footer ─────────────────────────────────────────── -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 CIS Academy Spring Game Jam · Team: Jenna, Joshua, Anvay, Elizabeth, Hibba, Charmi</p>
-      <p style="margin-top:.5rem;">
-        <a href="#">GitHub — Game</a> · <a href="#">GitHub — Website</a> · <a href="#">Play the Game</a>
-      </p>
+      <div class="footer-logo">GAME<span>JAM</span> 2026</div>
+      <p class="footer-copy">CIS Academy Spring Game Jam · Jenna · Joshua · Anvay · Elizabeth · Hibba · Charmi</p>
+      <div class="footer-links">
+        <a href="#">GitHub — Game</a>
+        <a href="#">GitHub — Website</a>
+        <a href="#">Play the Game</a>
+      </div>
     </div>
   </footer>
+
 </body>
 </html>
