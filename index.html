@@ -27,11 +27,11 @@
   <section id="hero">
     <div class="container hero-content">
       <p class="hero-eyebrow">CIS Academy · Game Jam 2026</p>
-      <h1 class="hero-title">ONE BOAT.<br><em>TWO PLAYERS.</em><br><span>NO WAY OUT.</span></h1>
-      <p class="hero-sub">We created a 2D combat game where players can work together to fight against enemy ghost pirates while on a boat.</p>
+      <h1 class="hero-title">TWO PLAYERS.<br><em>ONE ARENA.</em><br><span>BETTER TOGETHER.</span></h1>
+      <p class="hero-sub">A 2D head-to-head fighter on a ghost pirate ship. Two players, two abilities, one winner, but you need each other to play at all.</p>
       <div class="hero-btns">
         <a href="#play" class="btn btn-primary">Play the Game</a>
-        <!-- Scrolls down to the #play section -->
+        <!-- Scrolls down to the gameplay section -->
         <a href="#gameplay" class="btn btn-ghost">See How It Works</a>
       </div>
     </div>
@@ -46,6 +46,7 @@
           <p class="play-desc">Use the button to open the game on a web browser.</p>
         </div>
         <!--Anvay put link here-->
+        <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Play Now</a>
       </div>
     </div>
   </section>
@@ -56,56 +57,43 @@
         <p class="gp-label">Gameplay</p>
         <h2 class="gp-title">How It Works</h2>
       </div>
-      <!-- Full-width cinematic screenshot at the top -->
+
+      <!-- Full-width wide shot of the full arena -->
       <div class="gp-wide">
         <div class="img-slot img-wide">
-          <img src="screenshot-1.png" alt="Main gameplay screenshot" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <!--Put screenshot here (anvay)-->
-          <div class="img-ph"><span>Anvay put here</span></div> 
+          <img src="Screenshot 2026-05-20 102531.png" alt="Full arena overview">
         </div>
       </div>
 
-      <!-- Three alternating text + image blocks -->
+      <!-- Two alternating text + image blocks -->
       <div class="gblocks">
+
         <!-- Step 01: text left, image right -->
         <div class="gblock">
           <div>
             <p class="gnum">01</p>
-            <h3>Fight the Ghost Pirates</h3>
-            <p>Ghost pirates swarm the deck. Player 1 has the fighting ability to take them down. Player 2 carries a shield, blocking incoming hits and healing both players when damage lands. Neither one can do it without the other.</p>
+            <h3>Dash vs. Water</h3>
+            <p>Two players, two completely different abilities. Player 1 dashes, closing the gap instantly and punishing anyone who stands still. Player 2 launches water projectiles, controlling the space between them and forcing their opponent to keep moving. Neither ability beats the other. They just play differently.</p>
           </div>
           <div class="img-slot img-med">
-            <img src="screenshot-2.png" alt="Players fighting ghost pirates" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <!--Put screenshot here (anvay)-->
-            <div class="img-ph"><span>Anvay put here</span></div> 
+            <!-- screenshot-2.png: both characters mid-fight, water orb visible -->
+            <img src="Screenshot 2026-05-20 102449.png" alt="Both players mid-fight with water projectile visible">
           </div>
         </div>
 
+        <!-- Step 02: image left, text right -->
         <div class="gblock flip">
           <div class="img-slot img-med">
-            <img src="screenshot-3.png" alt="Key drop moment" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <!--Put screenshot here (anvay)-->
-            <div class="img-ph"><span>Anvay put here</span></div>
+            <!-- screenshot-3.png: fire player dashing, water player jumping -->
+            <img src="Screenshot 2026-05-20 102419.png" alt="Fire player dashing across the arena">
           </div>
           <div>
             <p class="gnum">02</p>
-            <h3>Find the Key</h3>
-            <p>When a pirate dies, one of them drops a key. The catch: you have no idea which one. Defeat the right pirate and the rest vanish. The key unlocks a portal hidden deep inside the ship's cabin.</p>
+            <h3>Opposite Abilities, Equal Footing</h3>
+            <p>Player 1 closes distance. Player 2 creates it. One ability is useless without the other to challenge it, you need an opponent who plays differently to make either one matter. That's the whole game, and that's the theme: <em>Better Together.</em></p>
           </div>
         </div>
 
-        <div class="gblock">
-          <div>
-            <p class="gnum">03</p>
-            <h3>Face the Skeleton</h3>
-            <p>At the end waits a skeleton with a parrot on its shoulder. It fires fireballs in every direction: up, down, fast. Both players have to jump, dodge, and push through together. Win, and the treasure is yours.</p>
-          </div>
-          <div class="img-slot img-med">
-            <img src="screenshot-4.png" alt="Skeleton boss fight" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <!--Put screenshot here (anvay)-->
-            <div class="img-ph"><span>Anvay put here</span></div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -115,61 +103,33 @@
       <div class="ch-header">
         <div>
           <p class="ch-label">Characters</p>
-          <h2 class="ch-title">Meet the Characters!</h2>
+          <h2 class="ch-title">Meet the Fighters</h2>
         </div>
-        <span class="ch-count">4 characters</span>
+        <span class="ch-count">2 fighters</span>
       </div>
-      <div class="chars-grid">
+      <div class="chars-grid chars-grid--two">
 
+        <!-- Player 1: Fire Dasher — gray armored bird character -->
         <div class="char-card player">
           <div class="char-art">
-            <img src="char-player1.png" alt="Player 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <!--Put screenshot here (anvay)-->
-            <div class="img-ph"><span>Anvay put here</span></div>
+            <img src="Screenshot 2026-05-20 102203.png" alt="Player 1 — Dasher" style="object-position: 35% 90%;">
           </div>
           <div class="char-body">
             <p class="ctag p1">Player 1</p>
-            <h4>The Fighter</h4>
-            <p>Attacks and defeats the ghost pirates. The only one who can end the fight.</p>
+            <h4>The Dasher</h4>
+            <p>Charges across the arena with a dash. High risk, high reward. Close the gap and deal damage, or miss and leave yourself wide open.</p>
           </div>
         </div>
 
+        <!-- Player 2: Water Shooter — Pikachu character -->
         <div class="char-card player">
           <div class="char-art">
-            <img src="char-player2.png" alt="Player 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <!--Put screenshot here (anvay)-->
-            <div class="img-ph"><span>Anvay put here</span></div>
+            <img src="Screenshot 2026-05-20 102138.png" alt="Player 2 — Water Shooter" style="object-position: 75% 90%;">
           </div>
           <div class="char-body">
             <p class="ctag p2">Player 2</p>
-            <h4>The Shield Bearer</h4>
-            <p>Blocks incoming attacks and heals both players. Without them, nobody makes it out.</p>
-          </div>
-        </div>
-
-        <div class="char-card enemy">
-          <div class="char-art">
-            <img src="ghostpirate-pixilart.png" alt="Ghost Pirate" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <!--Put screenshot here (anvay)-->
-            <div class="img-ph"><span>char-ghost.png</span></div>
-          </div>
-          <div class="char-body">
-            <p class="ctag en">Enemy</p>
-            <h4>Ghost Pirates</h4>
-            <p>One of them is holding the key. None of them will tell you which.</p>
-          </div>
-        </div>
-
-        <div class="char-card boss">
-          <div class="char-art">
-            <img src="char-skeleton.png" alt="Skeleton Boss" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <!--Put screenshot here (anvay)-->
-            <div class="img-ph"><span>Anvay put here</span></div>
-          </div>
-          <div class="char-body">
-            <p class="ctag bo">Final Boss</p>
-            <h4>The Skeleton</h4>
-            <p>Parrot on shoulder. Fireballs in every direction. It does not stop.</p>
+            <h4>The Water Shooter</h4>
+            <p>Fires water projectiles to control the arena. Keep your opponent at range, until they dash through your shots and you have to think fast.</p>
           </div>
         </div>
 
@@ -183,7 +143,7 @@
       <h2 class="dev-title">Behind the Game</h2>
       <div class="dev-body">
         <div class="dev-text">
-          <p>Ghost Tide was built for the CIS Academy Spring Game Jam 2026 around the theme <strong>"Better Together."</strong> The whole design comes from that idea that Player 1 can't heal and Player 2 can't fight. You need each other to survive.</p>
+          <p>Ghost Tide was built for the CIS Academy Spring Game Jam 2026 around the theme <strong>"Better Together."</strong> The game is a 1v1 fighter, but the theme is into the design. A dash is only dangerous if there's someone to dash at. A water projectile only matters if there's someone to dodge it. The two abilities were built against each other on purpose. You need an opponent to make either one meaningful.</p>
           <p>Six students across three grade levels built this: two juniors, two sophomores, two freshmen. The storyboard below shows how the game was planned before a single line of code was written.</p>
         </div>
       </div>
