@@ -3,124 +3,221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GAME JAM 2026</title>
+  <title>Ghost Tide — CIS Game Jam 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ── Nav ─────────────────────────────────────────── -->
+  <!--fixed to top with name on the left and play now button-->
   <nav>
     <div class="nav-inner">
-      <div class="nav-logo">GAME<span>JAM</span></div>
+      <div class="nav-logo">GHOST<span>TIDE</span></div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#theme">Theme</a></li>
-        <li><a href="#purpose">Purpose</a></li>
-        <li><a href="#storyboard">Storyboard</a></li>
+        <li><a href="#gameplay">Gameplay</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#development">Dev Log</a></li>
+        <li><a href="#team">Team</a></li>
       </ul>
+      <a href="#play" class="nav-cta">Play Now</a>
     </div>
   </nav>
 
-  <!-- ── Hero ─────────────────────────────────────────── -->
   <section id="hero">
-    <div class="hero-bg-text" aria-hidden="true">GAME JAM</div>
     <div class="container hero-content">
-      <p class="hero-eyebrow">Wed Day Game Jam · 2026</p>
-      <h1 class="hero-title">GAME<br><em>JAM</em><br><span>2026</span></h1>
-      <p class="hero-subtitle">A 2D cooperative combat game built by Juniors Jenna Patel &amp; Joshua Sanchez, Sophomores Anvay Purnaye &amp; Elizabeth Elden, and Freshmen Hibba Muhammad &amp; Charmi Patel.</p>
-      <div class="hero-cta">
-        <a href="#storyboard" class="btn btn-primary">View Storyboard</a>
-        <a href="#about" class="btn btn-outline">Learn More</a>
+      <p class="hero-eyebrow">CIS Academy · Game Jam 2026</p>
+      <h1 class="hero-title">ONE BOAT.<br><em>TWO PLAYERS.</em><br><span>NO WAY OUT.</span></h1>
+      <p class="hero-sub">We created a 2D combat game where players can work together to fight against enemy ghost pirates while on a boat.</p>
+      <div class="hero-btns">
+        <a href="#play" class="btn btn-primary">Play the Game</a>
+        <!-- Scrolls down to the #play section -->
+        <a href="#gameplay" class="btn btn-ghost">See How It Works</a>
       </div>
     </div>
-    <div class="scroll-hint"><span></span>Scroll</div>
   </section>
 
-  <!-- ── About ─────────────────────────────────────────── -->
-  <section id="about">
+  <section id="play" class="play-section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="section-label">About</p>
-          <h2 class="section-title">About Our Game</h2>
-          <div class="section-divider"></div>
-          <p>We created a 2D combat game where players can work together to fight against enemy ghost pirates while on a boat. Both players are crucial in that they both have their own unique abilities. Player 1 must defeat all of the ghosts since they have fighting abilities, and player 2 has a shield and can block attacks from ghosts. </p>
+      <div class="play-inner">
+        <div>
+          <p class="play-label">Play</p>
+          <h2 class="play-title">Play Ghost Tide</h2>
+          <p class="play-desc">Use the button to open the game on a web browser.</p>
         </div>
-        <div class="about-image-wrap">
-          <img src="game-screenshot.png" alt="Screenshot of the game" class="about-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="about-img-placeholder">
-            <span class="placeholder-icon">🎮</span>
-            <span class="placeholder-text">game-screenshot.png</span>
+        <!--Anvay put link here-->
+      </div>
+    </div>
+  </section>
+
+  <section id="gameplay">
+    <div class="container">
+      <div class="gp-header">
+        <p class="gp-label">Gameplay</p>
+        <h2 class="gp-title">How It Works</h2>
+      </div>
+      <!-- Full-width cinematic screenshot at the top -->
+      <div class="gp-wide">
+        <div class="img-slot img-wide">
+          <img src="screenshot-1.png" alt="Main gameplay screenshot" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <!--Put screenshot here (anvay)-->
+          <div class="img-ph"><span>Anvay put here</span></div> 
+        </div>
+      </div>
+
+      <!-- Three alternating text + image blocks -->
+      <div class="gblocks">
+        <!-- Step 01: text left, image right -->
+        <div class="gblock">
+          <div>
+            <p class="gnum">01</p>
+            <h3>Fight the Ghost Pirates</h3>
+            <p>Ghost pirates swarm the deck. Player 1 has the fighting ability to take them down. Player 2 carries a shield, blocking incoming hits and healing both players when damage lands. Neither one can do it without the other.</p>
+          </div>
+          <div class="img-slot img-med">
+            <img src="screenshot-2.png" alt="Players fighting ghost pirates" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <!--Put screenshot here (anvay)-->
+            <div class="img-ph"><span>Anvay put here</span></div> 
+          </div>
+        </div>
+
+        <div class="gblock flip">
+          <div class="img-slot img-med">
+            <img src="screenshot-3.png" alt="Key drop moment" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <!--Put screenshot here (anvay)-->
+            <div class="img-ph"><span>Anvay put here</span></div>
+          </div>
+          <div>
+            <p class="gnum">02</p>
+            <h3>Find the Key</h3>
+            <p>When a pirate dies, one of them drops a key. The catch: you have no idea which one. Defeat the right pirate and the rest vanish. The key unlocks a portal hidden deep inside the ship's cabin.</p>
+          </div>
+        </div>
+
+        <div class="gblock">
+          <div>
+            <p class="gnum">03</p>
+            <h3>Face the Skeleton</h3>
+            <p>At the end waits a skeleton with a parrot on its shoulder. It fires fireballs in every direction: up, down, fast. Both players have to jump, dodge, and push through together. Win, and the treasure is yours.</p>
+          </div>
+          <div class="img-slot img-med">
+            <img src="screenshot-4.png" alt="Skeleton boss fight" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <!--Put screenshot here (anvay)-->
+            <div class="img-ph"><span>Anvay put here</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Theme ──────────────────────────────────────────── -->
-  <section id="theme">
+  <section id="characters">
     <div class="container">
-      <div class="theme-inner">
-        <p class="section-label">This Year's Theme</p>
-        <h2 class="section-title">The Theme</h2>
-        <div class="theme-card">
-          <div class="theme-deco" aria-hidden="true">✦</div>
-          <div class="theme-word">BETTER<br>TOGETHER</div>
-          <p class="theme-hint">This year's official Game Jam theme</p>
+      <div class="ch-header">
+        <div>
+          <p class="ch-label">Characters</p>
+          <h2 class="ch-title">Meet the Characters!</h2>
         </div>
+        <span class="ch-count">4 characters</span>
+      </div>
+      <div class="chars-grid">
+
+        <div class="char-card player">
+          <div class="char-art">
+            <img src="char-player1.png" alt="Player 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <!--Put screenshot here (anvay)-->
+            <div class="img-ph"><span>Anvay put here</span></div>
+          </div>
+          <div class="char-body">
+            <p class="ctag p1">Player 1</p>
+            <h4>The Fighter</h4>
+            <p>Attacks and defeats the ghost pirates. The only one who can end the fight.</p>
+          </div>
+        </div>
+
+        <div class="char-card player">
+          <div class="char-art">
+            <img src="char-player2.png" alt="Player 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <!--Put screenshot here (anvay)-->
+            <div class="img-ph"><span>Anvay put here</span></div>
+          </div>
+          <div class="char-body">
+            <p class="ctag p2">Player 2</p>
+            <h4>The Shield Bearer</h4>
+            <p>Blocks incoming attacks and heals both players. Without them, nobody makes it out.</p>
+          </div>
+        </div>
+
+        <div class="char-card enemy">
+          <div class="char-art">
+            <img src="ghostpirate-pixilart.png" alt="Ghost Pirate" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <!--Put screenshot here (anvay)-->
+            <div class="img-ph"><span>char-ghost.png</span></div>
+          </div>
+          <div class="char-body">
+            <p class="ctag en">Enemy</p>
+            <h4>Ghost Pirates</h4>
+            <p>One of them is holding the key. None of them will tell you which.</p>
+          </div>
+        </div>
+
+        <div class="char-card boss">
+          <div class="char-art">
+            <img src="char-skeleton.png" alt="Skeleton Boss" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <!--Put screenshot here (anvay)-->
+            <div class="img-ph"><span>Anvay put here</span></div>
+          </div>
+          <div class="char-body">
+            <p class="ctag bo">Final Boss</p>
+            <h4>The Skeleton</h4>
+            <p>Parrot on shoulder. Fireballs in every direction. It does not stop.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ── Purpose ────────────────────────────────────── -->
-  <section id="purpose">
+  <section id="development">
     <div class="container">
-      <p class="section-label">Why We Built It</p>
-      <h2 class="section-title">Purpose</h2>
-      <div class="section-divider"></div>
-      <div class="purpose-grid">
-        <div class="purpose-card">
-          <div class="purpose-icon">🤝</div>
-          <h3>Teamwork</h3>
-          <p>Our game is built around the idea that no one wins alone. Player 1 and Player 2 each hold abilities the other lacks — together they're unstoppable, apart they fall.</p>
+      <p class="dev-label">Dev Log</p>
+      <h2 class="dev-title">Behind the Game</h2>
+      <div class="dev-body">
+        <div class="dev-text">
+          <p>Ghost Tide was built for the CIS Academy Spring Game Jam 2026 around the theme <strong>"Better Together."</strong> The whole design comes from that idea that Player 1 can't heal and Player 2 can't fight. You need each other to survive.</p>
+          <p>Six students across three grade levels built this: two juniors, two sophomores, two freshmen. The storyboard below shows how the game was planned before a single line of code was written.</p>
         </div>
-        <div class="purpose-card">
-          <div class="purpose-icon">🎮</div>
-          <h3>Collaboration in Design</h3>
-          <p>Six students across three grade levels worked together to design, build, and ship this game — itself a living example of the "Better Together" theme.</p>
-        </div>
-        <div class="purpose-card">
-          <div class="purpose-icon">⚔️</div>
-          <h3>Meaningful Mechanics</h3>
-          <p>Every mechanic serves the theme. The shield and the sword are useless without each other — a design choice that reflects the spirit of cooperative play.</p>
-        </div>
+      </div>
+      <div class="sb-wrap">
+        <img src="storyboard.png" alt="Game storyboard">
       </div>
     </div>
   </section>
 
-  <!-- ── Storyboard ────────────────────────────────────── -->
-  <section id="storyboard">
+  <section id="team">
     <div class="container">
-      <p class="section-label">Visual</p>
-      <h2 class="section-title">Storyboard</h2>
-      <div class="section-divider"></div>
-      <div class="storyboard-wrap">
-        <img src="storyboard.png" alt="Game storyboard showing the concept and flow of the game">
+      <div class="team-header">
+        <p class="team-label">Credits</p>
+        <h2 class="team-title">The Team</h2>
+      </div>
+      <div class="team-list">
+        <div class="tm"><p class="ty">Junior</p><p class="tn">Jenna Patel</p></div>
+        <div class="tm"><p class="ty">Junior</p><p class="tn">Joshua Sanchez</p></div>
+        <div class="tm"><p class="ty">Sophomore</p><p class="tn">Anvay Purnaye</p></div>
+        <div class="tm"><p class="ty">Sophomore</p><p class="tn">Elizabeth Elden</p></div>
+        <div class="tm"><p class="ty">Freshman</p><p class="tn">Hibba Muhammad</p></div>
+        <div class="tm"><p class="ty">Freshman</p><p class="tn">Charmi Patel</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ── Footer ─────────────────────────────────────────── -->
   <footer>
     <div class="container">
-      <div class="footer-logo">GAME<span>JAM</span> 2026</div>
-      <p class="footer-copy">CIS Academy Spring Game Jam · Jenna · Joshua · Anvay · Elizabeth · Hibba · Charmi</p>
-      <div class="footer-links">
-        <a href="#">GitHub — Game</a>
-        <a href="#">GitHub — Website</a>
-        <a href="#">Play the Game</a>
+      <p class="fl">GHOST<span>TIDE</span></p>
+      <p class="fc">CIS Academy Spring Game Jam 2026 · Theme: Better Together</p>
+      <div class="flinks">
+        <a href="https://github.com/MCST-CIS/wed-day-spring-game-jam-team-7">GitHub — Game</a>
+        <a href="https://github.com/jenna-p12/gamejam-website">GitHub — Website</a>
+        <a href="#">Play the Game</a> <!--Anvay put here-->
       </div>
     </div>
   </footer>
